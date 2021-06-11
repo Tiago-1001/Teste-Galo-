@@ -5,6 +5,7 @@ $textColor: #725C5C;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    max-width: 1366px;
 }
 
 .home {
@@ -63,186 +64,354 @@ $textColor: #725C5C;
             }
         }
     }
-
     .page {
         flex: 1;
         display: flex;
         flex-direction: column;
-        padding: 0 2.5rem;
 
         header {
-            display: flex;
-            flex-direction: row;
-            height: 70px;
             background-color: #fff1ea;
-            color: $textColor;
-            align-items: center;
+            height: 70px;
             margin-bottom: 1rem;
 
-            .title-header {
-                
-                span {
-                    font-size: .9rem;
-                }
-
-                h3 {
-                    font-weight: 500;
-                    margin: 0;
-                }
-            }
-            .end {
+            .header {
+                padding-top: .2rem;
                 display: flex;
-                position: absolute;
-                right: 0;
-
-
-                .language {
-                    display: flex;
-                    position: relative;
-                    align-items: center;
-                    border: 1px solid #CCC;
-                    color: #333;
-                    height: 1.5rem;
-                    width: 5.3rem;
-                    padding: .5rem;
-                    cursor: pointer;
-                    border-radius: 4px;
-                    margin-right: 2rem;
-                    font-size: 14px;
-
-                    &:hover {
-                        background-color: rgba(200, 200, 200, .09);
-                    }
-
-                    .icon-language {
-                        background-image: url(../assets/global.png);
-                        width: 16px;
-                        height: 16px;
-                        margin-right: 5px;
-                    }
-
-                    .icon-arrowDown {
-                        position: absolute;
-                        right: 15%;
-                        top: 25%;
-                        padding-left: .5rem;
-
-                        .arrow {
-                            border: solid black;
-                            border-width: 0 3px 3px 0;
-                            display: inline-block;
-                            padding: 3px;
-                        }
-
-                        .down {
-                            transform: rotate(45deg);
-                            -webkit-transform: rotate(45deg);
-                        }
-                    }
-                }
-
-                .login {
-                    display: flex;
-                    flex-direction: column;
-                    margin-right: 5rem;
-
-                    
-                        p {
-                            text-align: end;
-                        }
-
-                        div {
-                            background-image: url(../assets/image-profile.png);
-                            background-size: cover;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            position: absolute;
-                            right: 0;
-                            top: 10%;
-                            margin-right: 2.5rem;
-                        }
-                }
-            }
-        }
-
-        .title-page {
-            font-size: 20px;
-            color: $PrimaryColor;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: flex-end;
-
-            .btn {
-                margin-right: .5rem;
-            }
-
-            .donwload {
-                display: flex;
+                flex-direction: row;
+                display: grid;
+                width: 100%;
+                grid-template-columns: 60% 40%;
+                color: $textColor;
                 align-items: center;
-                justify-content: center;
-                color: #fff;
-                width: 120px;
-                height: 31px;
-                cursor: pointer;
-                border-radius: 5px;
-                font-size: 1rem;
-                background-color: $PrimaryColor;
 
-                div {
-                    padding-right: .3rem;
+                .title-header {
+                    padding-left: 2.5rem;
+                    
+                    span {
+                        font-size: .9rem;
+                    }
+
+                    h3 {
+                        font-weight: 500;
+                        margin: 0;
+                    }
+                }
+                .end {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 2.5rem;
+
+                    .language {
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        border: 2px solid #CCC;
+                        color: #444;
+                        height: 1.3rem;
+                        width: 5.3rem;
+                        padding: .5rem;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        margin-right: 2rem;
+                        font-size: 14px;
+
+                        &:hover {
+                            background-color: rgba(200, 200, 200, .09);
+                        }
+
+                        .icon-language {
+                            background-image: url(../assets/global.png);
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 5px;
+                        }
+
+                        .icon-arrowDown {
+                            position: absolute;
+                            right: 15%;
+                            top: 25%;
+                            padding-left: .5rem;
+
+                            .arrow {
+                                border: solid black;
+                                border-width: 0 3px 3px 0;
+                                display: inline-block;
+                                padding: 3px;
+                            }
+
+                            .down {
+                                transform: rotate(45deg);
+                                -webkit-transform: rotate(45deg);
+                            }
+                        }
+                    }
+
+                    .login {
+                        
+                        
+                            p {
+                                text-align: end;
+                                width: 100%;
+                            }
+
+                            div {
+                                display: flex;
+                                justify-content: flex-end;
+                                align-content: flex-end;
+                                width: 100%;
+                            }
+                    }
+                    .image-profile {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-self: center;
+                        background-image: url(../assets/image-profile.png);
+                        background-size: contain;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        margin-left: 10px;
+
+                        span {
+                            font-size: 11px;                            
+                            text-align: center;
+                            border-radius: 10px;
+                            color: #fff;
+                            width: 12px;
+                            height: 12px;
+                            background-color: #F85959;
+                            position: absolute;
+                        }
+                    }
                 }
             }
-            
-            .favorite {
-                position: relative;
-                background-color: $PrimaryColor;
-                width: 43px;
-                height: 31px;
-                border-radius: 5px;
-                border: none;
-                cursor: pointer;
+        }
+        
+        .padding-page {
+            padding: 0 2.5rem;
+        }
+        .aaa {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 60% 40%;
+
+            .title-page {
+                font-size: 20px;
+                color: $PrimaryColor;
+                letter-spacing: 0.04em;
+                margin-bottom: 1.5rem;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+
+                .btn {
+                    margin-right: .5rem;
+                }
+
+                .donwload {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    width: 120px;
+                    height: 31px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    background-color: $PrimaryColor;
+
+                    div {
+                        padding-right: .3rem;
+                    }
+                }
                 
-                div {
-                    position: absolute;
-                    background-image: url(../assets/star-23-16.ico);
-                    background-repeat: no-repeat;
+                .favorite {
+                    position: relative;
+                    background-color: $PrimaryColor;
+                    width: 43px;
+                    height: 31px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    
+                    div {
+                        position: absolute;
+                        background-image: url(../assets/star-23-16.ico);
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 100%;
+                        top: 25%;
+                        left: 35%;
+                    }
+                    
+                }
+
+                .doi {
+                    position: relative;
+                    background-color: $PrimaryColor;
+                    width: 43px;
+                    height: 31px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    margin: 0;
+        
+                    div {
+                        position: absolute;
+                        background-image: url(../assets/doi.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        top: 20%;
+                        left: 30%;
+                    }
+                }
+
+                #text-buttons {
+                    display: flex;
+                    justify-content: flex-end;
+                    color: $PrimaryColor;
+                    font-weight: 600;
+                    width: 100%;
+                }
+            }
+        }
+
+        .VandD {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 80% 20%;
+
+            .video {
+                background-image: url(../assets/video.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 783px;
+                height: 439px;
+                border-radius: 5px;
+
+                .bg {
                     width: 100%;
                     height: 100%;
-                    top: 20%;
-                    left: 30%;
+                    background: rgba(141, 53, 6, 0.5);
+                    display: flex;
+                    border-radius: 5px;
+
+
+
+                    .info-video {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 2rem;
+                        width: 100%;
+
+                        p:first-of-type {
+                            color: #fff;
+                            letter-spacing: 0.06em;
+                            font-weight: 900;
+                            font-size: 24px;
+
+                        }
+
+                    .text-video{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            margin-bottom: 1rem;
+                            .image {
+                                border: 1px solid $PrimaryColor;
+                                border-radius: 50%;
+                                width: 90px;
+                                height: 90px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                div {
+                                    background-image: url(../assets/image.png);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .text {
+                                color: #fff;
+                                font-size: 20px;
+                                font-weight: 700;
+                                margin-left: 1rem;
+                                letter-spacing: 0.05em;
+
+                                p:first-of-type {
+                                    color: #fff;
+                                    font-size: 34px;
+                                    margin-bottom: .3rem;
+                                    padding-top: 1rem;
+                                    font-weight: 900;
+                                }
+
+                            }
+                        }
+                    }
                 }
-                
             }
 
-            .doi {
-                position: relative;
-                background-color: $PrimaryColor;
-                width: 43px;
-                height: 31px;
-                border-radius: 5px;
-                border: none;
-                cursor: pointer;
-    
-                div {
-                    position: absolute;
-                    background-image: url(../assets/doi.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    width: 20px;
-                    height: 20px;
-                    top: 15%;
-                    left: 25%;
+            .details {
+                width: 13.25rem;
+                height: 27.4rem;
+                border: 1px solid #ECECEC;
+                font: 12px;
+
+                h3 {
+                    padding: .5rem;
+                    background-color: #FDF1EB;
+                    color: #4E4E4E;
+                    font-size: 20px;
+                    border: 1px solid #ECECEC;
+                }
+
+                .text-details {
+                    padding: .7rem;
+                    color: #5C5C5C;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    p {
+                        line-height: 20px;
+                    }
+                    div:nth-of-type(1) {
+                        margin: 2rem 0;
+                        line-height: 20px;
+                    }
+                    div:nth-of-type(2) {
+                        margin-top: 1.5rem;
+                        color: #805c4a8c;
+                        font-size: 11px;
+                    }
                 }
             }
         }
-        #text-buttons {
-            margin-top: .7rem;
-            text-align: end;
-            color: $PrimaryColor;
-            font-weight: 900;
+
+        .resume {
+            p:last-of-type {
+               
+
+            }
+        }
+
+        #abbb {
+            p:first-of-type {
+            
+            }
         }
     }
 }

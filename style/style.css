@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  max-width: 1366px;
 }
 
 .home {
@@ -82,10 +83,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 2.5rem;
 }
 
 .home .page header {
+  background-color: #fff1ea;
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+.home .page header .header {
+  padding-top: .2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,33 +100,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 70px;
-  background-color: #fff1ea;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
   color: #725C5C;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
 }
 
-.home .page header .title-header span {
+.home .page header .header .title-header {
+  padding-left: 2.5rem;
+}
+
+.home .page header .header .title-header span {
   font-size: .9rem;
 }
 
-.home .page header .title-header h3 {
+.home .page header .header .title-header h3 {
   font-weight: 500;
   margin: 0;
 }
 
-.home .page header .end {
+.home .page header .header .end {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  right: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 2.5rem;
 }
 
-.home .page header .end .language {
+.home .page header .header .end .language {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,9 +142,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #CCC;
-  color: #333;
-  height: 1.5rem;
+  border: 2px solid #CCC;
+  color: #444;
+  height: 1.3rem;
   width: 5.3rem;
   padding: .5rem;
   cursor: pointer;
@@ -138,82 +153,116 @@
   font-size: 14px;
 }
 
-.home .page header .end .language:hover {
+.home .page header .header .end .language:hover {
   background-color: rgba(200, 200, 200, 0.09);
 }
 
-.home .page header .end .language .icon-language {
+.home .page header .header .end .language .icon-language {
   background-image: url(../assets/global.png);
   width: 16px;
   height: 16px;
   margin-right: 5px;
 }
 
-.home .page header .end .language .icon-arrowDown {
+.home .page header .header .end .language .icon-arrowDown {
   position: absolute;
   right: 15%;
   top: 25%;
   padding-left: .5rem;
 }
 
-.home .page header .end .language .icon-arrowDown .arrow {
+.home .page header .header .end .language .icon-arrowDown .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
 }
 
-.home .page header .end .language .icon-arrowDown .down {
+.home .page header .header .end .language .icon-arrowDown .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-.home .page header .end .login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 5rem;
-}
-
-.home .page header .end .login p {
+.home .page header .header .end .login p {
   text-align: end;
+  width: 100%;
 }
 
-.home .page header .end .login div {
-  background-image: url(../assets/image-profile.png);
-  background-size: cover;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: absolute;
-  right: 0;
-  top: 10%;
-  margin-right: 2.5rem;
-}
-
-.home .page .title-page {
-  font-size: 20px;
-  color: #ED7839;
-}
-
-.home .page .buttons {
+.home .page header .header .end .login div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  width: 100%;
 }
 
-.home .page .buttons .btn {
+.home .page header .header .end .image-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-image: url(../assets/image-profile.png);
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.home .page header .header .end .image-profile span {
+  font-size: 11px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  background-color: #F85959;
+  position: absolute;
+}
+
+.home .page .padding-page {
+  padding: 0 2.5rem;
+}
+
+.home .page .aaa {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.home .page .aaa .title-page {
+  font-size: 20px;
+  color: #ED7839;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.home .page .aaa .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home .page .aaa .buttons .btn {
   margin-right: .5rem;
 }
 
-.home .page .buttons .donwload {
+.home .page .aaa .buttons .donwload {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,11 +281,11 @@
   background-color: #ED7839;
 }
 
-.home .page .buttons .donwload div {
+.home .page .aaa .buttons .donwload div {
   padding-right: .3rem;
 }
 
-.home .page .buttons .favorite {
+.home .page .aaa .buttons .favorite {
   position: relative;
   background-color: #ED7839;
   width: 43px;
@@ -246,17 +295,17 @@
   cursor: pointer;
 }
 
-.home .page .buttons .favorite div {
+.home .page .aaa .buttons .favorite div {
   position: absolute;
   background-image: url(../assets/star-23-16.ico);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  top: 20%;
-  left: 30%;
+  top: 25%;
+  left: 35%;
 }
 
-.home .page .buttons .doi {
+.home .page .aaa .buttons .doi {
   position: relative;
   background-color: #ED7839;
   width: 43px;
@@ -264,23 +313,177 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  margin: 0;
 }
 
-.home .page .buttons .doi div {
+.home .page .aaa .buttons .doi div {
   position: absolute;
   background-image: url(../assets/doi.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  top: 15%;
-  left: 25%;
+  top: 20%;
+  left: 30%;
 }
 
-.home .page #text-buttons {
-  margin-top: .7rem;
-  text-align: end;
+.home .page .aaa .buttons #text-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: #ED7839;
+  font-weight: 600;
+  width: 100%;
+}
+
+.home .page .VandD {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+}
+
+.home .page .VandD .video {
+  background-image: url(../assets/video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 783px;
+  height: 439px;
+  border-radius: 5px;
+}
+
+.home .page .VandD .video .bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(141, 53, 6, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+}
+
+.home .page .VandD .video .bg .info-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+}
+
+.home .page .VandD .video .bg .info-video p:first-of-type {
+  color: #fff;
+  letter-spacing: 0.06em;
   font-weight: 900;
+  font-size: 24px;
+}
+
+.home .page .VandD .video .bg .info-video .text-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.home .page .VandD .video .bg .info-video .text-video .image {
+  border: 1px solid #ED7839;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .page .VandD .video .bg .info-video .text-video .image div {
+  background-image: url(../assets/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.home .page .VandD .video .bg .info-video .text-video .text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.home .page .VandD .video .bg .info-video .text-video .text p:first-of-type {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: .3rem;
+  padding-top: 1rem;
+  font-weight: 900;
+}
+
+.home .page .VandD .details {
+  width: 13.25rem;
+  height: 27.4rem;
+  border: 1px solid #ECECEC;
+  font: 12px;
+}
+
+.home .page .VandD .details h3 {
+  padding: .5rem;
+  background-color: #FDF1EB;
+  color: #4E4E4E;
+  font-size: 20px;
+  border: 1px solid #ECECEC;
+}
+
+.home .page .VandD .details .text-details {
+  padding: .7rem;
+  color: #5C5C5C;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.home .page .VandD .details .text-details p {
+  line-height: 20px;
+}
+
+.home .page .VandD .details .text-details div:nth-of-type(1) {
+  margin: 2rem 0;
+  line-height: 20px;
+}
+
+.home .page .VandD .details .text-details div:nth-of-type(2) {
+  margin-top: 1.5rem;
+  color: #805c4a8c;
+  font-size: 11px;
 }
 /*# sourceMappingURL=style.css.map */
