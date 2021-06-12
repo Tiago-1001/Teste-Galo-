@@ -581,6 +581,7 @@
   overflow: hidden;
   cursor: pointer;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 1365px) {
@@ -606,10 +607,215 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+.home .page .discution {
+  border: 1px solid #ECECEC;
+  width: 100.5%;
+}
+
+.home .page .discution h5:nth-child(2) {
+  color: #ED7839;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+}
+
+.home .page .discution .icons-disctuion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home .page .discution .icons-disctuion .emoji {
+  height: 45px;
+  width: 50px;
+  margin-right: 4rem;
+}
+
+.home .page .discution .icons-disctuion .emojiOne {
+  background-image: url(../assets/icone1.png);
+}
+
+.home .page .discution .icons-disctuion .emojiTwo {
+  background-image: url(../assets/icone2.png);
+}
+
+.home .page .discution .icons-disctuion .emojiThree {
+  background-image: url(../assets/icone3.png);
+}
+
+.home .page .discution #p-discution {
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  color: #595959;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+.home .page .discution .bbb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  height: 0;
+  position: relative;
+}
+
+.home .page .discution .bbb .line {
+  border-top: 1px solid #ECECEC;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.home .page .discution .button-newTopic {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEB254), to(#F0813D));
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  width: 133px;
+  height: 2rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
+}
+
+.home .page .discution .quests {
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.home .page .discution .quests .quest-discution {
+  border: 1px solid #ECECEC;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.home .page .discution .quests .quest-discution h5 {
+  color: #ED7839;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.home .page .discution .quests .quest-discution span {
+  font-size: 12px;
+  color: #5C5C5C;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.home .page .discution .quests .quest-discution p {
+  margin-top: .5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  color: #4D4D4D;
+}
+
+.home .page .discution .quests .quest-discution .icons-quests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .page .discution .quests .quest-discution .icons-quests .ellipsis {
+  color: #ED7839;
+  padding-right: 3px;
+  cursor: pointer;
+}
+
+.home .page .discution .quests .quest-discution .icons-quests .like {
+  background-color: #ED7839;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  color: #fff;
+  height: 19px;
+  width: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.home .page .discution .quests .quest-discution .text-quests span {
+  color: #757575;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 350;
+}
+
+.home .page .discution .quests .quest-discution .text-quests span:first-of-type {
+  margin-right: .5rem;
+}
+
+.home .page .discution .quests .questTwo {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.home .page .discution .quests .res {
+  display: none;
+}
+
+.home .page .discution .quests .respost-discution {
+  padding: 1rem;
+  border: 1px solid #ECECEC;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.home .page .discution .quests .respost-discution span {
+  color: #5C5C5C;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.home .page .discution .quests .respost-discution p {
+  color: #4D4D4D;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  margin-top: .7rem;
+}
+
+.home .page .discution .quests .resTwo p:last-of-type {
+  margin-top: 1rem;
+}
+
 .home .page .credits {
   background-image: url(../assets/imagemFooter.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   height: 181px;
   margin-top: 2.5rem;
