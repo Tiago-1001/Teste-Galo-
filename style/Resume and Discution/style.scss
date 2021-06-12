@@ -1,0 +1,256 @@
+@import "../var.scss";
+@import "../global/style.scss";
+
+.all {
+    color: $cinza-medio;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: $robot;
+    display: flex;
+    align-items: center;
+}
+
+.resume {
+    width: 100.5%;
+    margin-top: 3rem;
+    border: 1px solid $branco-border;
+    border-radius: 3px;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 2rem;
+    
+    @media (max-width: 1365px) {
+       width: 101%;
+    }
+
+    .moreText {
+        display: none;
+    }
+
+    .verMais {
+        position: absolute;
+        color: $laranja-escuro;
+        bottom: 8%;
+        font-weight: bold;
+        right: 1.5%;
+    }
+
+    p {
+        padding: .7rem;
+        font-family: 'Quicksand', sans-serif;
+    }
+}
+
+.discution {
+    border: 1px solid $branco-border;
+    width: 100.5%;
+
+    h5:nth-child(2) {
+        color: $laranja-escuro;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .icons-disctuion {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        .emoji {
+            height: 45px;
+            width: 50px;
+            margin-right: 4rem;
+        }
+
+        .emojiOne {
+            background-image: url(../assets/icone1.png);
+        }
+
+        .emojiTwo {
+            background-image: url(../assets/icone2.png);
+            
+        }
+
+        .emojiThree {
+            background-image: url(../assets/icone3.png);
+        }
+    }
+
+    #p-discution {
+        max-width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        color: $cinza-claro;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 2.5rem;
+    }
+    .bbb {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        height: 0;
+        position: relative;
+
+        .line {
+            border-top: 1px solid $branco-border;
+            height: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    .button-newTopic {
+        position: absolute;
+        cursor: pointer;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Quicksand', sans-serif;
+        color: $branco;
+        background: $laranja-linear;
+        width: 133px;
+        height: 2rem;
+        border-radius: 4px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, .12), rgba(0, 0, 0, .24);
+    }
+    .quests {
+        margin: 1rem;
+        margin-top: 2rem;
+
+
+        .quest-discution {
+            border: 1px solid $branco-border;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+
+            h5 {
+                color: $laranja-escuro;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            span {
+                font-size: 12px;
+                color: $cinza-claro;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+            }
+
+            p {
+                margin-top: .5rem;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 14px;
+                color: $cinza-medio;
+            }
+
+            .icons-quests {
+                display: flex;
+                margin-top: 1rem;
+
+                .ellipsis {
+                    color: $laranja-escuro;
+                    padding-right: 3px;
+                    cursor: pointer;
+                }
+
+                .like {
+                    background-color: $laranja-escuro;
+                    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+                    border-radius: 2px;
+                    color: $branco;
+                    height: 19px;
+                    width: 27px;       
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;       
+                    cursor: pointer;
+                    margin-right: 1rem;
+                }
+            }
+
+            .text-quests {
+                span {
+                    color: $cinza-claro;
+                    font-family: 'Segoe UI', sans-serif;
+                    font-weight: 350;
+
+                    &:first-of-type {
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
+
+        .questTwo {
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+
+        .res {
+            display: none;
+        }
+        
+        .respost-discution {
+            padding: 1rem;
+            border: 1px solid $branco-border;
+            border-radius: 0px 0px 4px 4px;
+
+            .name-res {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+
+                span {
+                    color: $cinza-claro;
+                    font-size: 12px;
+                    
+                }
+
+                div {
+                    display: flex;
+
+                    span {
+                        color: $laranja-escuro;
+                        margin-right: 0.8rem;
+                        font-size: 14px;
+                    }
+
+                    div {
+                        color: $laranja-escuro;
+                        height: 20px;
+                        width: 20px;
+                    }
+                    
+                }
+            }
+
+            p {
+                color: $cinza-medio;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 14px;
+                margin-top: .7rem;
+            }
+        }
+
+        .resOne {
+            p:last-of-type {
+                margin-top: 1rem;
+            }
+        }
+
+        .resTwo {
+            p:last-of-type {
+                margin-top: 1rem;
+            }
+        }
+
+    }
+}

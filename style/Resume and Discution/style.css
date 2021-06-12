@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #EFEFEF;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+}
+
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15rem 1fr;
+      grid-template-columns: 15rem 1fr;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.padding-page {
+  padding: 0 2.5rem;
+}
+
+.all {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4E4E4E;
+  background-color: #FDF1EB;
+  border: 1px solid #ECECEC;
+  border-radius: 3px 3px 0 0;
+  padding: .7rem;
+}
+
+.all {
+  color: #4E4E4E;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume {
+  width: 100.5%;
+  margin-top: 3rem;
+  border: 1px solid #E7E7E7;
+  border-radius: 3px;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1365px) {
+  .resume {
+    width: 101%;
+  }
+}
+
+.resume .moreText {
+  display: none;
+}
+
+.resume .verMais {
+  position: absolute;
+  color: #ED7839;
+  bottom: 8%;
+  font-weight: bold;
+  right: 1.5%;
+}
+
+.resume p {
+  padding: .7rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.discution {
+  border: 1px solid #E7E7E7;
+  width: 100.5%;
+}
+
+.discution h5:nth-child(2) {
+  color: #ED7839;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+}
+
+.discution .icons-disctuion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.discution .icons-disctuion .emoji {
+  height: 45px;
+  width: 50px;
+  margin-right: 4rem;
+}
+
+.discution .icons-disctuion .emojiOne {
+  background-image: url(../assets/icone1.png);
+}
+
+.discution .icons-disctuion .emojiTwo {
+  background-image: url(../assets/icone2.png);
+}
+
+.discution .icons-disctuion .emojiThree {
+  background-image: url(../assets/icone3.png);
+}
+
+.discution #p-discution {
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  color: #5C5C5C;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+.discution .bbb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  height: 0;
+  position: relative;
+}
+
+.discution .bbb .line {
+  border-top: 1px solid #E7E7E7;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.discution .button-newTopic {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFB354), to(#EE7A3A));
+  background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+  width: 133px;
+  height: 2rem;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
+}
+
+.discution .quests {
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.discution .quests .quest-discution {
+  border: 1px solid #E7E7E7;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.discution .quests .quest-discution h5 {
+  color: #ED7839;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.discution .quests .quest-discution span {
+  font-size: 12px;
+  color: #5C5C5C;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.discution .quests .quest-discution p {
+  margin-top: .5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  color: #4E4E4E;
+}
+
+.discution .quests .quest-discution .icons-quests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.discution .quests .quest-discution .icons-quests .ellipsis {
+  color: #ED7839;
+  padding-right: 3px;
+  cursor: pointer;
+}
+
+.discution .quests .quest-discution .icons-quests .like {
+  background-color: #ED7839;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  color: #fff;
+  height: 19px;
+  width: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.discution .quests .quest-discution .text-quests span {
+  color: #5C5C5C;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 350;
+}
+
+.discution .quests .quest-discution .text-quests span:first-of-type {
+  margin-right: .5rem;
+}
+
+.discution .quests .questTwo {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.discution .quests .res {
+  display: none;
+}
+
+.discution .quests .respost-discution {
+  padding: 1rem;
+  border: 1px solid #E7E7E7;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.discution .quests .respost-discution .name-res {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.discution .quests .respost-discution .name-res span {
+  color: #5C5C5C;
+  font-size: 12px;
+}
+
+.discution .quests .respost-discution .name-res div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discution .quests .respost-discution .name-res div span {
+  color: #ED7839;
+  margin-right: 0.8rem;
+  font-size: 14px;
+}
+
+.discution .quests .respost-discution .name-res div div {
+  color: #ED7839;
+  height: 20px;
+  width: 20px;
+}
+
+.discution .quests .respost-discution p {
+  color: #4E4E4E;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  margin-top: .7rem;
+}
+
+.discution .quests .resOne p:last-of-type {
+  margin-top: 1rem;
+}
+
+.discution .quests .resTwo p:last-of-type {
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
