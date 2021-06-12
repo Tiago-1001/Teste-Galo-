@@ -2,7 +2,20 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  max-width: 1366px;
+}
+
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #EFEFEF;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
 }
 
 .home {
@@ -144,13 +157,21 @@
           align-items: center;
   border: 2px solid #CCC;
   color: #444;
-  height: 1.3rem;
-  width: 5.3rem;
+  height: 1rem;
+  width: 5rem;
   padding: .5rem;
   cursor: pointer;
   border-radius: 4px;
   margin-right: 2rem;
   font-size: 14px;
+}
+
+@media (max-width: 1365px) {
+  .home .page header .header .end .language {
+    height: .8rem;
+    width: 4rem;
+    font-size: 12px;
+  }
 }
 
 .home .page header .header .end .language:hover {
@@ -159,23 +180,45 @@
 
 .home .page header .header .end .language .icon-language {
   background-image: url(../assets/global.png);
-  width: 16px;
-  height: 16px;
+  background-size: cover;
+  width: 14px;
+  height: 14px;
   margin-right: 5px;
+}
+
+@media (max-width: 1365px) {
+  .home .page header .header .end .language .icon-language {
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .home .page header .header .end .language .icon-arrowDown {
   position: absolute;
-  right: 15%;
-  top: 25%;
-  padding-left: .5rem;
+  right: 13%;
+  top: 18%;
+}
+
+@media (max-width: 1365px) {
+  .home .page header .header .end .language .icon-arrowDown {
+    right: 10%;
+    top: 20%;
+    padding-left: 0;
+  }
 }
 
 .home .page header .header .end .language .icon-arrowDown .arrow {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2.5px 2.5px 0;
   display: inline-block;
   padding: 3px;
+}
+
+@media (max-width: 1365px) {
+  .home .page header .header .end .language .icon-arrowDown .arrow {
+    border-width: 0 2px 2px 0;
+  }
 }
 
 .home .page header .header .end .language .icon-arrowDown .down {
@@ -443,10 +486,33 @@
 }
 
 .home .page .VandD .details {
-  width: 13.25rem;
+  width: 15.25rem;
   height: 27.4rem;
   border: 1px solid #ECECEC;
   font: 12px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.home .page .VandD .details::-webkit-scrollbar {
+  width: 6px;
+}
+
+.home .page .VandD .details::-webkit-scrollbar-track {
+  background: #EFEFEF;
+}
+
+.home .page .VandD .details::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #BFBFBF;
+  -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+  border: 2px solid #fff;
+}
+
+@media (max-width: 1365px) {
+  .home .page .VandD .details {
+    width: 13.25rem;
+  }
 }
 
 .home .page .VandD .details h3 {
@@ -482,8 +548,59 @@
 }
 
 .home .page .VandD .details .text-details div:nth-of-type(2) {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   color: #805c4a8c;
   font-size: 11px;
+  margin-bottom: 20rem;
+}
+
+@media (max-width: 1365px) {
+  .home .page .VandD .details .text-details div:nth-of-type(2) {
+    margin-top: 1.5rem;
+  }
+}
+
+.home .page .resume {
+  width: 100.5%;
+  margin-top: 2rem;
+  border: 1px solid #ECECEC;
+  border-radius: 3px;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (max-width: 1365px) {
+  .home .page .resume {
+    width: 101%;
+  }
+}
+
+.home .page .resume .moreText {
+  display: none;
+}
+
+.home .page .resume .verMais {
+  position: absolute;
+  color: #ED7839;
+  bottom: 8%;
+  font-weight: bold;
+  right: 1.5%;
+}
+
+.home .page .resume h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4E4E4E;
+  background-color: #FDF1EB;
+  border: 1px solid #ECECEC;
+  border-radius: 3px 3px 0 0;
+  padding: .7rem;
+}
+
+.home .page .resume p {
+  padding: .7rem;
+  font-family: 'Quicksand', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
