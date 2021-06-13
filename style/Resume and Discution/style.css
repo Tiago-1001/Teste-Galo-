@@ -259,6 +259,7 @@
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .discution .newTopic .contents .edition .icons {
@@ -294,6 +295,144 @@
   margin-bottom: .2rem;
 }
 
+.discution .topic-submitted {
+  position: relative;
+  text-align: center;
+  display: none;
+}
+
+.discution .topic-submitted .title-topicSubmitted {
+  color: #ED7839;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.discution .topic-submitted .body-text {
+  color: #4E4E4E;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
+.discution .topic-submitted .link-submitted {
+  color: #f48f44;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  display: block;
+}
+
+.discution .topic-submitted .line-submitted {
+  border-top: 1px solid #E7E7E7;
+  height: 0;
+  width: 97%;
+  margin-left: 1rem;
+  z-index: -1;
+  position: absolute;
+  top: 48%;
+}
+
+.discution .topic-submitted button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFB354), to(#EE7A3A));
+  background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+  color: #fff;
+  border: none;
+  height: 2rem;
+  width: 14.6rem;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  margin-top: 2.5rem;
+  margin-bottom: .7rem;
+  cursor: pointer;
+}
+
+.discution .topic-submitted .bg-feedback {
+  position: absolute;
+  border-radius: 4px;
+  margin-left: 1rem;
+  height: 9.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.5rem 1rem;
+}
+
+.discution .topic-submitted h5 {
+  color: #ED7839;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: "Quicksand", sans-serif;
+}
+
+.discution .topic-submitted span {
+  font-size: 12px;
+  color: #5C5C5C;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.discution .topic-submitted p {
+  margin-top: .5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  color: #4E4E4E;
+  font-weight: normal;
+  max-width: 97.3%;
+  text-align: start;
+}
+
+.discution .topic-submitted .feedback {
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+  width: 97.3%;
+  margin-left: 1rem;
+  height: 9.2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.discution .topic-submitted .feedback .icon-feedback {
+  color: #707070;
+  height: 20px;
+  width: 20px;
+}
+
+.discution .topic-submitted .feedback h5 {
+  color: #707070;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+.discution .topic-submitted .feedback a {
+  color: #ED7839;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 .discution .quests {
   margin: 2rem 1rem 0 1rem;
 }
@@ -309,8 +448,9 @@
 
 .discution .quests .quest-discution h5 {
   color: #ED7839;
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: "Quicksand", sans-serif;
 }
 
 .discution .quests .quest-discution span {

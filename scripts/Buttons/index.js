@@ -1,9 +1,14 @@
+let addTopic = document.querySelector('.newTopic');
+let topicSubmitted = document.querySelector('.topic-submitted');
+let topics = document.querySelector('.topics');
+
 function verMais() {
     let button = document.querySelector('.verMais');
     let ellipsis = document.querySelector('#ellipsis');
     let visible = document.querySelector('.moreText');
 
-    if (visible.style.display == 'none') {
+    if (visible.style.display !== "inline-block") {
+
         visible.style.display = "inline-block";
         button.style.display = "none";
         ellipsis.style.display = "none";
@@ -13,19 +18,41 @@ function verMais() {
         button.style.display = "inline-block";
         ellipsis.style.display = "inline";
     }
-}
+};
+
+
 
 function newTopic() {
-    let topic = document.querySelector('.newTopic');
-    console.log('aaa');
-    console.log(topic);
+    if (addTopic.style.display !== "inline-block") {
 
-    if (topic.style.display !== "inline-block") {
-        topic.style.display = "inline-block";
+        addTopic.style.display = "inline-block";
     } else {
-        topic.style.display = "none";
+
+        addTopic.style.display = "none";
+    }
+};
+
+
+function send() {
+    if (addTopic.style.display && topics.style.display !== "none") {
+        
+        addTopic.style.display = "none";
+        topics.style.display = "none";
+        topicSubmitted.style.display = "block";
+    }
+};
+
+
+function addNewTopic() {
+    if (topicSubmitted.style.display !== "none") {
+
+        topicSubmitted.style.display = "none";
+        addTopic.style.display = "inline-block";
+        topics.style.display = "block";
+
     }
 }
+
 
 
 function respost() {
@@ -36,4 +63,4 @@ function respost() {
     } else {
         res.style.display = "none";
     }
-}
+};
