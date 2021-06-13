@@ -150,24 +150,51 @@
                     </div>
                     <div class="discution">
                         <h4 class="all">Discussões</h4>
-                        <h5>Compartilhe suas ideias ou dúvidas com os autores!</h5>
-                        <div class="icons-disctuion">
-                            <div class="emojiOne emoji"></div>
-                            <div class="emojiTwo emoji"></div>
-                            <div class="emojiThree emoji"></div>
-                        </div>
-                        <p id="p-discution">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o auto!</p>
-                        <div class="bbb">
-                            <div class="line"></div>
-                            <div class="button-newTopic">
-                                <div class="icon-newTopics">
-                                    <svg width="27" height="27" fill="none" viewBox="-5 -2 24 24">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 5.75V18.25"></path>
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M18.25 12L5.75 12"></path>
-                                    </svg>
-                                </div>
-                                <span>criar tópico</span>
+                        <div class="topics">
+                            <h5 class="subTitle-discution">Compartilhe suas ideias ou dúvidas com os autores!</h5>
+                            <div class="icons-disctuion">
+                                <div class="emojiOne emoji"></div>
+                                <div class="emojiTwo emoji"></div>
+                                <div class="emojiThree emoji"></div>
                             </div>
+                            <p id="p-discution">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o auto!</p>
+                            <div class="bbb">
+                                <div class="line"></div>
+                                <div class="button-newTopic" onClick="newTopic()">
+                                    <div class="icon-newTopics">
+                                        <svg width="27" height="27" fill="none" viewBox="-5 -2 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 5.75V18.25"></path>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M18.25 12L5.75 12"></path>
+                                        </svg>
+                                    </div>
+                                    <span>criar tópico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newTopic" >
+                                <span class="subTitle-newTopic">Tem uma dúvida ou sugestão? compartilhe seu feedback com os autores!</span>
+                            <div class="assunto">
+                                <h5>Assunto</h5>
+                                <div>
+                                    <input type="text" class="input-assunto" placeholder="Defina um tópico sucinto para notificar os autores...">
+                                </div>
+                            </div>
+                            <div class="contents">
+                                <h5>Conteúdo</h5>
+                                <div>
+                                <input type="text" class="input-contents">
+                                </div>
+                                <div class="edition">
+                                    <div class="icons">
+                                        <div class="bold"></div>
+                                        <div class="italic"></div>
+                                    </div>
+                                    <div class="button">
+                                        <button>Enviar</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="line-newTopic"></div>
                         </div>
                         <div class="quests">
                             <div class="quest-discution questOne">
@@ -260,14 +287,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="credits"></div>
                     </div>
-                    <div class="credits"></div>
             </div>
         </div>
     </div>
     
 
-    <script src="./scripts/Button resume/index.js"></script>
-    <script src="./scripts/Button discution/index.js"></script>
+    <script src="./scripts/Buttons/index.js"></script>
 </body>
 </html>

@@ -1,15 +1,6 @@
 @import "../var.scss";
 @import "../global/style.scss";
 
-.all {
-    color: $cinza-medio;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: $robot;
-    display: flex;
-    align-items: center;
-}
-
 .resume {
     width: 100.5%;
     margin-top: 3rem;
@@ -45,83 +36,177 @@
 
 .discution {
     border: 1px solid $branco-border;
+    border-bottom: none;
     width: 100.5%;
 
-    h5:nth-child(2) {
-        color: $laranja-escuro;
-        font-size: 1.1rem;
-        font-weight: bold;
-        text-align: center;
-        margin: 1rem;
+    .topics {
+        .subTitle-discution {
+            color: $laranja-escuro;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .icons-disctuion {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            .emoji {
+                height: 45px;
+                width: 50px;
+                margin-right: 4rem;
+            }
+
+            .emojiOne {
+                background-image: url(../assets/icone1.png);
+            }
+
+            .emojiTwo {
+                background-image: url(../assets/icone2.png);
+                
+            }
+
+            .emojiThree {
+                background-image: url(../assets/icone3.png);
+            }
+        }
+
+        #p-discution {
+            max-width: 60%;
+            text-align: center;
+            margin: 0 auto;
+            color: $cinza-claro;
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 2.5rem;
+        }
+        .bbb {
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+            height: 0;
+            position: relative;
+        }
+        .button-newTopic {
+            position: absolute;
+            cursor: pointer;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-family: 'Quicksand', sans-serif;
+            color: $branco;
+            background: $laranja-linear;
+            width: 133px;
+            height: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .12), rgba(0, 0, 0, .24);
+        }
     }
 
-    .icons-disctuion {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    .newTopic {
+        padding-left: 1rem;
+        width: 98.5%;
+        display: none;
 
-        .emoji {
-            height: 45px;
-            width: 50px;
-            margin-right: 4rem;
-        }
-
-        .emojiOne {
-            background-image: url(../assets/icone1.png);
-        }
-
-        .emojiTwo {
-            background-image: url(../assets/icone2.png);
-            
-        }
-
-        .emojiThree {
-            background-image: url(../assets/icone3.png);
-        }
-    }
-
-    #p-discution {
-        max-width: 60%;
-        text-align: center;
-        margin: 0 auto;
-        color: $cinza-claro;
-        font-family: 'Quicksand', sans-serif;
-        margin-bottom: 2.5rem;
-    }
-    .bbb {
-        display: flex;
-        justify-content: center;
-        margin: 1rem;
-        height: 0;
-        position: relative;
-
-        .line {
+        .line-newTopic {
             border-top: 1px solid $branco-border;
             height: 0;
-            width: 100%;
+            width: 98.5%;
             z-index: -1;
         }
-    }
-    .button-newTopic {
-        position: absolute;
-        cursor: pointer;
-        transform: translateY(-50%);
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: 'Quicksand', sans-serif;
-        color: $branco;
-        background: $laranja-linear;
-        width: 133px;
-        height: 2rem;
-        border-radius: 4px;
-        box-shadow: 0 0 2px rgba(0, 0, 0, .12), rgba(0, 0, 0, .24);
-    }
-    .quests {
-        margin: 1rem;
-        margin-top: 2rem;
 
+        .subTitle-newTopic {
+            display: flex;
+            justify-content: center;
+            color:$cinza-claro;
+            margin-top: 1rem;
+            font-family: $quicksand;
+            font-size: 14px;
+        }
+
+        .assunto {
+            .input-assunto {
+                border: 1px solid #CCCCCC;
+                border-radius: 3px;
+                font-size: 14px;
+                font-family: $quicksand;
+                padding: 10px 20px;
+                width: 95%;
+                margin-bottom: .5rem;
+            }
+        }
+
+        .contents {
+            .input-contents {
+                border: 1px solid #CCCCCC;
+                border-radius: 3px;
+                height: 7rem;
+                width: 98.5%;
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+            }
+
+            .edition {
+                display: grid;
+                grid-template-columns: 82% 18%;
+                border: 1px solid #CCCCCC;
+                height: 31px;
+                width: 98.5%;
+                background-color: #EAF1F2;
+                border-radius: 0 0 4px 4px;
+                margin-bottom: 1rem;
+
+                .button {
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+                        border-radius: 4px;
+                        border: none;
+                        color: $branco;
+                        font-size: 15px;
+                        font-family: $quicksand;
+                        font-weight: bold;
+                    }
+                }
+
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 2rem;
+
+                    .bold, .italic {
+                        height: 11px;
+                        width: 11px;
+                        background-size: contain;
+                        cursor: pointer;
+                    }
+                    
+                    .bold {
+                        background-image: url(../assets/bold-16.ico);
+                    }
+                    .italic {
+                        background-image: url(../assets/italic-16.ico);
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
+
+        h5 {
+            color: $laranja-escuro;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: .2rem;
+        }
+    }
+
+    .quests {
+        margin: 2rem 1rem 0 1rem;
 
         .quest-discution {
             border: 1px solid $branco-border;

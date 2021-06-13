@@ -40,3 +40,10 @@
     border-radius: 3px 3px 0 0;
     padding: .7rem;
 }
+
+.line {
+    border-top: 1px solid $branco-border;
+    height: 0;
+    width: 98.5%;
+    z-index: -1;
+}

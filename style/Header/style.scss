@@ -30,12 +30,6 @@
         li {
             width: 100%;
             border-bottom: 2px solid $branco-border;
-            
-
-            &::marker {
-                background-color: $laranja-claro;
-                border-left: 6px solid linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
-            }
 
             a {
                 font-size: 16px;
