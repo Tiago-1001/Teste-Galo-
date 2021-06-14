@@ -78,6 +78,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 65vh;
+  z-index: 5;
 }
 
 @media (max-width: 760px) {

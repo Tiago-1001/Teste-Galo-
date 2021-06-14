@@ -18,6 +18,10 @@
   border: 2px solid #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -255,12 +259,6 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
-}
-
-@media (max-width: 760px) {
-  .discution .topics .button-newTopic {
-    z-index: -1;
-  }
 }
 
 .discution .newTopic {
