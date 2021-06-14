@@ -18,6 +18,18 @@
   border: 2px solid #fff;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.background-black {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
 .home {
   display: -ms-grid;
   display: grid;
@@ -36,10 +48,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 15rem;
+}
+
+@media (max-width: 760px) {
+  .page {
+    margin: 0;
+  }
 }
 
 .padding-page {
   padding: 0 2.5rem;
+}
+
+@media (max-width: 760px) {
+  .padding-page {
+    padding: 0;
+  }
 }
 
 .all {
@@ -56,11 +81,17 @@
   border-top: 1px solid #E7E7E7;
   height: 0;
   width: 98.5%;
-  z-index: -1;
+  position: absolute;
+}
+
+@media (max-width: 760px) {
+  .line {
+    z-index: -1;
+  }
 }
 
 .resume {
-  width: 100.5%;
+  width: 100%;
   margin-top: 3rem;
   border: 1px solid #E7E7E7;
   border-radius: 3px;
@@ -71,9 +102,13 @@
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 760px) {
   .resume {
-    width: 101%;
+    position: initial;
+    width: 92%;
+    margin: .8rem;
+    margin-top: 0rem;
+    font-size: 13px;
   }
 }
 
@@ -82,11 +117,11 @@
 }
 
 .resume .verMais {
-  position: absolute;
   color: #ED7839;
-  bottom: 8%;
   font-weight: bold;
-  right: 1.5%;
+  float: right;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
 }
 
 .resume p {
@@ -97,7 +132,14 @@
 .discution {
   border: 1px solid #E7E7E7;
   border-bottom: none;
-  width: 100.5%;
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .discution {
+    width: 92%;
+    margin: 0 .8rem;
+  }
 }
 
 .discution .topics .subTitle-discution {
@@ -106,6 +148,12 @@
   font-weight: bold;
   text-align: center;
   margin: 1rem;
+}
+
+@media (max-width: 760px) {
+  .discution .topics .subTitle-discution {
+    font-size: 1rem;
+  }
 }
 
 .discution .topics .icons-disctuion {
@@ -119,10 +167,29 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 760px) {
+  .discution .topics .icons-disctuion {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .discution .topics .icons-disctuion .emoji {
   height: 45px;
   width: 50px;
   margin-right: 4rem;
+}
+
+@media (max-width: 760px) {
+  .discution .topics .icons-disctuion .emoji {
+    height: 35px;
+    width: 40px;
+    background-size: cover;
+    margin-right: 1rem;
+  }
 }
 
 .discution .topics .icons-disctuion .emojiOne {
@@ -146,6 +213,13 @@
   margin-bottom: 2.5rem;
 }
 
+@media (max-width: 760px) {
+  .discution .topics #p-discution {
+    font-size: .8rem;
+    max-width: 90%;
+  }
+}
+
 .discution .topics .bbb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,10 +233,9 @@
 }
 
 .discution .topics .button-newTopic {
-  position: absolute;
   cursor: pointer;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,10 +250,17 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#FFB354), to(#EE7A3A));
   background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
   width: 133px;
+  padding-right: 1rem;
   height: 2rem;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 760px) {
+  .discution .topics .button-newTopic {
+    z-index: -1;
+  }
 }
 
 .discution .newTopic {
@@ -193,7 +273,12 @@
   border-top: 1px solid #E7E7E7;
   height: 0;
   width: 98.5%;
-  z-index: -1;
+}
+
+@media (max-width: 760px) {
+  .discution .newTopic .line-newTopic {
+    width: 92%;
+  }
 }
 
 .discution .newTopic .subTitle-newTopic {
@@ -209,6 +294,15 @@
   font-size: 14px;
 }
 
+@media (max-width: 760px) {
+  .discution .newTopic .subTitle-newTopic {
+    font-size: .8rem;
+    max-width: 90%;
+    text-align: center;
+    padding-top: .5rem;
+  }
+}
+
 .discution .newTopic .assunto .input-assunto {
   border: 1px solid #CCCCCC;
   border-radius: 3px;
@@ -217,6 +311,13 @@
   padding: 10px 20px;
   width: 95%;
   margin-bottom: .5rem;
+}
+
+@media (max-width: 760px) {
+  .discution .newTopic .assunto .input-assunto {
+    width: 80%;
+    font-size: .7rem;
+  }
 }
 
 .discution .newTopic .contents .input-contents {
@@ -235,6 +336,12 @@
           align-items: flex-start;
 }
 
+@media (max-width: 760px) {
+  .discution .newTopic .contents .input-contents {
+    width: 92%;
+  }
+}
+
 .discution .newTopic .contents .edition {
   display: -ms-grid;
   display: grid;
@@ -246,6 +353,15 @@
   background-color: #EAF1F2;
   border-radius: 0 0 4px 4px;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 760px) {
+  .discution .newTopic .contents .edition {
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+    width: 92%;
+    border-radius: 2px 2px 4px 4px;
+  }
 }
 
 .discution .newTopic .contents .edition .button button {
@@ -301,6 +417,12 @@
   display: none;
 }
 
+@media (max-width: 760px) {
+  .discution .topic-submitted {
+    z-index: -1;
+  }
+}
+
 .discution .topic-submitted .title-topicSubmitted {
   color: #ED7839;
   font-weight: bold;
@@ -309,12 +431,27 @@
   margin-bottom: 1.2rem;
 }
 
+@media (max-width: 760px) {
+  .discution .topic-submitted .title-topicSubmitted {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
 .discution .topic-submitted .body-text {
   color: #4E4E4E;
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
   display: block;
   margin-bottom: 1.8rem;
+}
+
+@media (max-width: 760px) {
+  .discution .topic-submitted .body-text {
+    font-size: .8rem;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .discution .topic-submitted .link-submitted {
@@ -332,6 +469,13 @@
   z-index: -1;
   position: absolute;
   top: 48%;
+}
+
+@media (max-width: 760px) {
+  .discution .topic-submitted .line-submitted {
+    width: 92%;
+    top: 50%;
+  }
 }
 
 .discution .topic-submitted button {
@@ -391,6 +535,12 @@
   text-align: start;
 }
 
+@media (max-width: 760px) {
+  .discution .topic-submitted p {
+    font-size: .8rem;
+  }
+}
+
 .discution .topic-submitted .feedback {
   border: 1px solid #E7E7E7;
   border-radius: 4px;
@@ -413,6 +563,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 760px) {
+  .discution .topic-submitted .feedback {
+    width: 90.5%;
+  }
 }
 
 .discution .topic-submitted .feedback .icon-feedback {
