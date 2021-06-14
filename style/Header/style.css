@@ -83,7 +83,7 @@
 
 @media (max-width: 760px) {
   .navbar #nav-list {
-    width: 45vw;
+    width: 60vw;
     height: 95vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -98,6 +98,7 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background: #ED7839;
+    background-color: #FDF1EB;
     -webkit-transform: translateY(-2.2%);
             transform: translateY(-2.2%);
     position: fixed;
@@ -111,8 +112,6 @@
     position: absolute;
     height: 100%;
     right: -2px;
-    -webkit-box-shadow: 0px 0px 10px 0.7px rgba(0, 0, 0, 0.9);
-            box-shadow: 0px 0px 10px 0.7px rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -121,11 +120,12 @@
   padding-top: .5rem;
   padding-bottom: .5rem;
   list-style: none;
+  margin-bottom: 3rem;
 }
 
 .navbar #nav-list li:hover {
-  background-color: #FDF1EB;
-  border-left: 4px solid #ED7839;
+  background-color: #ED7839;
+  border-left: 4px solid #FDF1EB;
 }
 
 @media (max-width: 760px) {
@@ -134,10 +134,10 @@
   }
   .navbar #nav-list li:hover {
     border: none;
-    background-color: #FDF1EB;
+    background-color: #ED7839;
   }
   .navbar #nav-list li:hover a {
-    color: #ED7839;
+    color: #FDF1EB;
   }
 }
 
@@ -154,16 +154,16 @@
 
 @media (max-width: 760px) {
   .navbar #nav-list li a {
-    color: #fff;
+    color: #000;
     letter-spacing: 1px;
     padding: 8px;
-    font-weight: normal;
+    font-weight: bold;
   }
 }
 
 .navbar #nav-list #orange {
-  background-color: #FDF1EB;
-  border-left: 4px solid #ED7839;
+  background-color: #ED7839;
+  border-left: 4px solid #FDF1EB;
 }
 
 @media (max-width: 760px) {
@@ -172,8 +172,100 @@
     width: 100%;
   }
   .navbar #nav-list #orange a {
-    color: #ED7839;
+    color: #FDF1EB;
   }
+}
+
+.navbar #nav-list .bb {
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.navbar #nav-list .login-mobile {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-bottom: .5rem;
+  background-color: #ED7839;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-22%);
+          transform: translateY(-22%);
+  padding-bottom: 1rem;
+}
+
+.navbar #nav-list .login-mobile .dados-login-mobile {
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: .3rem;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+}
+
+.navbar #nav-list .login-mobile .dados-login-mobile div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar #nav-list .login-mobile .dados-login-mobile div p {
+  font-size: 15px;
+}
+
+.navbar #nav-list .login-mobile .dados-login-mobile div .icon-settings {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.navbar #nav-list .login-mobile .image-profile-mobile {
+  background-image: url(../assets/image-profile.png);
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+  border: 2px solid #E7E7E7;
+  padding: 1px;
+}
+
+.navbar #nav-list .login-mobile .image-profile-mobile span {
+  font-size: 11px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  background-color: #F85959;
+  position: absolute;
 }
 
 header {
