@@ -184,8 +184,8 @@ header {
 
 @media (max-width: 760px) {
   header {
-    margin-top: 4vh;
-    height: 85px;
+    margin-top: 7.5vh;
+    height: 75px;
   }
 }
 
@@ -207,7 +207,7 @@ header .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: .6rem;
+    margin-top: rem;
   }
 }
 

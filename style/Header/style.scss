@@ -151,8 +151,8 @@ header {
     margin-bottom: 1rem;
 
     @media (max-width: 760px) {
-        margin-top: 4vh;
-        height: 85px;
+        margin-top: 7.5vh;
+        height: 75px;
     }
 
     .header {
@@ -165,7 +165,7 @@ header {
 
         @media (max-width: 760px) {
             display: flex;
-            margin-top: .6rem;
+            margin-top: rem;
         }
 
         .title-header {
